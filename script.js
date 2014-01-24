@@ -2,6 +2,8 @@ var users_joined = [];
 var chatrooms = {'west_side':{}, 'east_side':{}};
 
 window.new_user_joined = function(name) {
+	users_joined.push(name);
+	console.log(users_joined);
 }
 
 //this function is only called once by the server every five seconds
